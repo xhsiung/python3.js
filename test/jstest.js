@@ -41,7 +41,6 @@ function test() {
 	 	// 'kkk': this
 	}).toString());
 
-	//error
 	console.log(pytest.test_09(function (caller, x, y, z) {
 	 	console.log(caller, ' -> js_func_01');
 	 	console.log('x: ', x.toString());
