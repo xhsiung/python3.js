@@ -29,13 +29,10 @@ function test() {
 	console.log(pytest.test_05(null), pytest.test_05(undefined));
 
 
-	//error
 	console.log(pytest.test_06([1, 2, 3]).toString());
 	
-	//error
 	console.log(pytest.test_07({'aaa': 111, 'bbb': 222}).toString());
 
-	//error
 	console.log(pytest.test_08({
 	 	'aaa': 111, 222: 'bbb', 'ccc': true, 'ddd': 33.3, 
 	 	'eee': function (x, y) { return x + y; }, 
