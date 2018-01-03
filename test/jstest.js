@@ -30,27 +30,27 @@ function test() {
 
 
 	//error
-	//console.log(pytest.test_06([1, 2, 3]).valueOf());
+	console.log(pytest.test_06([1, 2, 3]).toString());
 	
 	//error
-	//console.log(pytest.test_07({'aaa': 111, 'bbb': 222}).valueOf());
+	console.log(pytest.test_07({'aaa': 111, 'bbb': 222}).toString());
 
 	//error
-	// console.log(pytest.test_08({
-	// 	'aaa': 111, 222: 'bbb', 'ccc': true, 'ddd': 33.3, 
-	// 	'eee': function (x, y) { return x + y; }, 
-	// 	'fff': [444, '555', 666], 
-	// 	'ggg': {'hhh': 777, 888: 'iii', 'jjj': function (x, y) { return x * y; }}, 
-	// 	// 'kkk': this
-	// }).valueOf());
+	console.log(pytest.test_08({
+	 	'aaa': 111, 222: 'bbb', 'ccc': true, 'ddd': 33.3, 
+	 	'eee': function (x, y) { return x + y; }, 
+	 	'fff': [444, '555', 666], 
+	 	'ggg': {'hhh': 777, 888: 'iii', 'jjj': function (x, y) { return x * y; }}, 
+	 	// 'kkk': this
+	}).toString());
 
 	//error
-	// console.log(pytest.test_09(function (caller, x, y, z) {
-	// 	console.log(caller, ' -> js_func_01');
-	// 	console.log('x: ', x.valueOf());
-	// 	console.log('y: ', y.valueOf());
-	// 	return z;
-	// })('js_test', [222, '333', 444], {'aaa': 555, 666: 'bbb', 'ccc': 777, 'ddd': 88.8})('js_test', 8, 9));	
+	console.log(pytest.test_09(function (caller, x, y, z) {
+	 	console.log(caller, ' -> js_func_01');
+	 	console.log('x: ', x.toString());
+	 	console.log('y: ', y.toString());
+	 	return z;
+	})('js_test', [222, '333', 444], {'aaa': 555, 666: 'bbb', 'ccc': 777, 'ddd': 88.8})('js_test', 8, 9));	
 
 	try {
 		pytest.test_10(function () { throw('js_test_exception'); } );
