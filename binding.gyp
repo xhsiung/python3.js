@@ -1,9 +1,9 @@
 {
   "targets": [
     {
-      "target_name": "binding",
+      "target_name": "python3",
       "sources": [
-        "src/binding.cc",
+        "src/python3.cc",
         "src/utils.cc",
         "src/py_object_wrapper.cc"
       ],
