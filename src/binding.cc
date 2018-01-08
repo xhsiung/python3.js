@@ -50,4 +50,4 @@ void init(Handle<Object> exports)
         _py_function_template->GetFunction());
 }
 
-NODE_MODULE(binding, init)
+NODE_MODULE( NODE_GYP_MODULE_NAME , init)
